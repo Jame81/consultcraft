@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>ConsultCraft Inc.</title>
+  <link rel="icon" type="image/png" href="./asset/ConsultCraft Logo.png" />
+
+  <link rel="stylesheet" href="styles.css" />
+  <script defer src="script.js"></script>
+  
+
+</head>
+<body>
+  <div class="stars"></div>
+  
+  <header class="navbar">
+    <div class="logo">
+        <img src="./asset/ConsultCraft Logo.png" alt="ConsultCraft Logo Light" class="logo-img logo-light" />
+        <img src="./asset/ConsultCraft_Logo__1__dark-removebg-preview.png" alt="ConsultCraft Logo Dark" class="logo-img logo-dark" />
+        <span class="logo-text">ConsultCraft Inc.</span>
+    </div>
+
+
+    <nav class="nav-links" id="nav-links">
+      <a href="#home">Home</a>
+      <a href="#">About</a>
+      <a href="#">Services</a>
+      <a href="#">Testimonials</a>
+      <a href="#">Careers</a>
+      <a href="#">Contact</a>
+    </nav>
+    <div class="navbar-actions">
+    <label class="theme-switch">
+        <input type="checkbox" id="theme-toggle" />
+        <span class="slider"></span>
+    </label>
+    <!-- <a href="#services" class="cta-navbar">Get Started</a> -->
+    <button id="nav-toggle" class="nav-toggle" aria-label="Toggle menu">
+      <span class="hamburger"></span>
+    </button>
+  </div>
+  </header>
+
+  <section id="home" class="hero">
+  <!-- Background Video -->
+  <video class="hero-bg-video" autoplay muted loop playsinline>
+    <source src="./asset/moving-star.mp4" type="video/mp4" />
+    Your browser does not support the video tag.
+  </video>
+
+  <!-- Foreground Content -->
+  <div class="hero-content">
+    <h1>
+      Create <span class="highlight"><span id="typed-text"></span></span>
+    </h1>
+    <p>
+      <span class="headline">Learn.Lead.Excel</span><br />
+    </p>
+
+
+    <!-- Embedded Video (not background) -->
+    <div class="video-wrapper">
+      <video
+        src="./asset/scroll.mp4"
+        autoplay
+        muted
+        loop
+        playsinline
+        poster="./asset/AbhishekNegi.png"
+      ></video>
+    </div>
+  </div>
+</section>
+
+<div class="new-user-cta">
+  <p>Ready to grow or guide !</p>
+  <a href="#auth" class="scroll-down">Click here to register ↓</a>
+</div>
+
+
+<section id="auth" class="auth-section">
+  <h2 class="about-heading">Welcome to ConsultCraft</h2>
+  <p class="about-description">
+    Access your journey as a <strong>Learner</strong> or <strong>Coach</strong> with ease.
+  </p>
+
+  <!-- Main Toggle: Login / Register -->
+  <div class="auth-toggle">
+    <button id="loginToggle" class="toggle-btn active">Login</button>
+    <button id="registerToggle" class="toggle-btn">Register</button>
+  </div>
+
+  <!-- Auth Forms Container -->
+  <div class="auth-container">
+    <!-- Login Form -->
+    <form class="auth-form" id="loginForm">
+      <h3>Login</h3>
+      <input type="email" placeholder="Email" required />
+      <input type="password" placeholder="Password" required />
+      <button type="submit" class="auth-btn">Login</button>
+    </form>
+
+    <!-- Register Form -->
+    <form class="auth-form hidden" id="registerForm">
+      <h3>Register</h3>
+
+      <!-- Learner/Coach Toggle -->
+      <div class="user-type-toggle">
+        <button id="learnerToggle" class="role-btn active">Learner</button>
+        <button id="coachToggle" class="role-btn">Coach</button>
+      </div>
+
+      <input type="text" placeholder="Full Name" required />
+      <input type="email" placeholder="Email" required />
+      <input type="password" placeholder="Password" required />
+
+      <div class="coach-fields hidden" id="coachFields">
+        <input type="text" placeholder="Profession (e.g., Football Coach)" />
+      </div>
+
+      <button type="submit" class="auth-btn">Register</button>
+    </form>
+  </div>
+</section>
+
+<!-- services section -->
+ <section class="services-section">
+  <h2 class="services-title">OUR PRODUCTS</h2>
+
+  <!-- SportsCove Card -->
+  <div class="service-card" id="sportscove">
+    <div class="pill-header clickable">
+      <div class="pill-title-wrapper">
+        <h3 class="pill-title">SportsCove</h3>
+        <p class="pill-caption">Training meets tech—performance redefined.</p>
+      </div>
+      <hr class="pill-line" />
+      <button class="pill-toggle" aria-label="Toggle SportsCove">+</button>
+    </div>
+
+    <div class="pill-dropdown hidden">
+      <div class="card-description">
+        <p>
+          SportsCove integrates science and sports into a single platform. From personalized coaching plans to real-time recovery metrics, we build tools that elevate athletic excellence.
+        </p>
+      </div>
+
+      <div class="card-slider">
+        <div class="slider-track">
+          <img src="./asset/Abhishek Negi - Kung Fu.png" alt="Sports 1" />
+          <img src="./asset/Abhishek Negi- Kung Fu 3.png" alt="Sports 2" />
+          <img src="./asset/Amba Singh - Learner Example.jpg" alt="Sports 3" />
+          <img src="./asset/Animish Dighe - Muay Thai 12.JPG" alt="Sports 4" />
+          <img src="./asset/Animish Dighe - Muay Thai 2.JPG" alt="Sports 5" />
+          <img src="./asset/Animish Dighe - Muay Thai 6.JPG" alt="Sports 6" />
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ConsultCove Card -->
+  <div class="service-card coming-soon" id="consultcove">
+    <div class="pill-header clickable">
+      <div class="pill-title-wrapper">
+        <h3 class="pill-title">ConsultCove</h3>
+        <p class="pill-caption">Smart consulting, coming your way soon.</p>
+      </div>
+      <hr class="pill-line" />
+      <button class="pill-toggle" aria-label="Toggle ConsultCove">+</button>
+    </div>
+    <div class="pill-dropdown hidden coming-content">
+      <h2>COMING SOON</h2>
+    </div>
+  </div>
+</section>
+
+
+
+
+<section class="our-story-section" id="our-story">
+  <div class="story-left">
+    <h2>What We<br />do</h2>
+    <hr />
+    <button id="read-more-btn" class="read-more">Read More</button>
+  </div>
+
+  <div class="story-right">
+    <h3>Get to Know Us</h3>
+    <p>
+      ConsultCraft was born out of a shared vision—to bridge the gap between talent and opportunity in the global consulting space.
+      <span class="more-text">
+        We saw how individuals and businesses often struggle with strategic clarity and growth due to lack of access to professional guidance.
+        That’s why we built ConsultCraft: a trusted platform where professionals thrive through coaching, collaboration, and world-class consulting tools.
+      </span>
+    </p>
+  </div>
+</section>
+
+<section class="mission-vision-section">
+  <div class="mv-box-row">
+    <!-- Mission Box -->
+    <div class="mv-box-container">
+      <svg class="mv-svg" viewBox="0 0 800 600" preserveAspectRatio="none">
+        <defs>
+          <linearGradient id="missionGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+            <stop offset="0%" stop-color="#a259ff" />
+            <stop offset="100%" stop-color="#5533ff" />
+          </linearGradient>
+        </defs>
+        <path fill="url(#missionGradient)" fill-opacity="0.15"
+              d="M650,300Q630,370,560,415Q490,460,410,470Q330,480,260,440Q190,400,140,340Q90,280,90,200Q90,120,160,80Q230,40,310,60Q390,80,460,110Q530,140,580,190Q630,240,650,300Z" />
+      </svg>
+      <div class="mv-box">
+        <h3>Our Mission</h3>
+        <hr />
+        <p>Our mission is to empower professionals to monetize their expertise through coaching, content creation, and sponsorships, while enabling enthusiasts and learners to access quality training from a diverse selection of providers—anywhere, anytime, and through any medium. We bridge virtual and physical training experiences, fostering financial stability and growth for sports and business professionals worldwide while democratizing access to elite-level instruction and inspiration.
+</p>
+      </div>
+    </div>
+
+    <!-- Vision Box -->
+    <div class="mv-box-container">
+      <svg class="mv-svg" viewBox="0 0 800 600" preserveAspectRatio="none">
+        <defs>
+          <linearGradient id="visionGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+            <stop offset="0%" stop-color="#5533ff" />
+            <stop offset="100%" stop-color="#a259ff" />
+          </linearGradient>
+        </defs>
+        <path fill="url(#visionGradient)" fill-opacity="0.15"
+              d="M615,319Q603,388,545,439Q487,490,410,509.5Q333,529,269,486.5Q205,444,160,389Q115,334,103.5,257Q92,180,158,128Q224,76,305,59Q386,42,453.5,86Q521,130,574,182.5Q627,235,615,319Z" />
+      </svg>
+      <div class="mv-box">
+        <h3>Our Vision</h3>
+        <hr />
+        <p>To be a global leader in innovative and ethical technology, pioneering the seamless integration of virtual and physical experiences that transform how the world learns, trains, and excels in sports and business. We envision a future where every professional can build sustainable careers through their expertise, while every enthusiast—regardless of background or ability—has access to world-class training and mentorship that transcends all boundaries.
+</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- testimonial section -->
+ 
+ <section class="testimonial-carousel">
+  <img src="./asset/about.png" alt="Decorative Background" class="testimonial-bg" />
+  <!-- Row 1 -->
+  <div class="testimonial-row row-1">
+    <div class="testimonial-track">
+      <div class="testimonial-card">"ConsultCraft transformed our approach!"<br><span>- Anubhav, CEO</span></div>
+      <div class="testimonial-card">"Efficient, smart, and scalable consulting."<br><span>- Asha, CMO</span></div>
+      <div class="testimonial-card">"Professional team with solid results."<br><span>- Rakesh, Product Lead</span></div>
+      <div class="testimonial-card">"Game-changing insights for our brand."<br><span>- Priya, Brand Strategist</span></div>
+      <!-- Duplicate for seamless loop -->
+      <div class="testimonial-card">"ConsultCraft transformed our approach!"<br><span>- Anubhav, CEO</span></div>
+      <div class="testimonial-card">"Efficient, smart, and scalable consulting."<br><span>- Asha, CMO</span></div>
+      <div class="testimonial-card">"Professional team with solid results."<br><span>- Rakesh, Product Lead</span></div>
+      <div class="testimonial-card">"Game-changing insights for our brand."<br><span>- Priya, Brand Strategist</span></div>
+    </div>
+  </div>
+
+  <!-- Row 2 -->
+  <div class="testimonial-row row-2">
+    <div class="testimonial-track">
+      <div class="testimonial-card">"Best consulting experience we’ve had."<br><span>- John, Sports Director</span></div>
+      <div class="testimonial-card">"The solutions were beyond expectations."<br><span>- Meena, Operations Head</span></div>
+      <div class="testimonial-card">"We loved the detailed strategy work."<br><span>- Tanvi, Analyst</span></div>
+      <div class="testimonial-card">"Our athlete program has seen real results."<br><span>- Dev, Coach</span></div>
+      <!-- Duplicate for seamless loop -->
+      <div class="testimonial-card">"Best consulting experience we’ve had."<br><span>- John, Sports Director</span></div>
+      <div class="testimonial-card">"The solutions were beyond expectations."<br><span>- Meena, Operations Head</span></div>
+      <div class="testimonial-card">"We loved the detailed strategy work."<br><span>- Tanvi, Analyst</span></div>
+      <div class="testimonial-card">"Our athlete program has seen real results."<br><span>- Dev, Coach</span></div>
+    </div>
+  </div>
+</section>
+
+<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+  <footer>      
+    <p>&copy; 2025 ConsultCraft Inc. All rights reserved.</p>
+  </footer>
+</body>
+</html>
